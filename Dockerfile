@@ -15,7 +15,7 @@ RUN apt install python3-pip -y
 
 RUN apt install ffmpeg -y
 
-COPY requirements.txt .
+COPY requirements.txt ./
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
