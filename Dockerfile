@@ -13,8 +13,7 @@ RUN apt install python3-pip -y
 
 RUN apt install ffmpeg -y
 
-COPY requirements.txt ./
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r pyrogram==1.2.9 tgcrypto==1.2.2 requests==2.24.0
 
 COPY . .
 
